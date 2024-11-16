@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Creative Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to Google Fonts for Roboto font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="portfolio-body">
+    <!-- Navbar -->
+    <header class="navbar">
+      <nav class="navbar-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+          <li class="nav-item">
+            <a href="#resume" class="nav-link">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-content">
+        Hello! I’m a creative developer passionate about building engaging user
+        experiences. I specialize in web design and development, focusing on
+        creating clean, modern websites with a strong emphasis on usability and
+        aesthetics.
+      </p>
+      <video class="about-video" controls>
+        <source src="about-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work-section">
+      <h2 class="section-title">My Work</h2>
+      <p class="section-content">Here are a few projects I've worked on:</p>
+      <ul class="work-list">
+        <li>
+          <a href="https://example1.com" class="work-link" target="_blank"
+            >Project One</a
+          >
+        </li>
+        <li>
+          <a href="https://example2.com" class="work-link" target="_blank"
+            >Project Two</a
+          >
+        </li>
+        <li>
+          <a href="https://example3.com" class="work-link" target="_blank"
+            >Project Three</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+      <h2 class="section-title">My Resume</h2>
+      <table class="resume-table">
+        <thead>
+          <tr>
+            <th class="resume-column">Year</th>
+            <th class="resume-column">Position</th>
+            <th class="resume-column">Company</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2024</td>
+            <td>Frontend Developer</td>
+            <td>Creative Agency</td>
+          </tr>
+          <tr>
+            <td>2022</td>
+            <td>Web Designer</td>
+            <td>Design Studio</td>
+          </tr>
+          <tr>
+            <td>2020</td>
+            <td>Junior Developer</td>
+            <td>Tech Corp</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Contact Section with Form -->
+    <section id="contact" class="contact-section">
+      <h2 class="section-title">Contact Me</h2>
+      <form action="#" method="post" class="contact-form">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" id="name" name="name" class="form-input" required />
+
+        <label for="email" class="form-label">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="form-input"
+          required
+        />
+
+        <label for="message" class="form-label">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          class="form-textarea"
+          rows="4"
+          required
+        ></textarea>
+
+        <button type="submit" class="form-button">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-text">&copy; 2024 Creative Portfolio | Designed by Me</p>
+    </footer>
+  </body>
+</html>
